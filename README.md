@@ -1,9 +1,11 @@
-# javascript-王仲斌-
+﻿# javascript-王仲斌-
 javascript的持续成长之路
 
 
 
 这是一个文科生，用win10系统学习javascript的历程。
+
+[这里是主页](https://wangzhong2014.github.io/javascript/)
 
 虽然学习编程的，大都是用mac，不过我还是用的是windows，还是win7系统，之所以不用mac，是因为太贵，买不起。
 
