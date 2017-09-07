@@ -1,3 +1,61 @@
+/* 这是我从bootstrap网站里面直接copy过来的样式*/
+.header {
+    background: #222;
+    background-repeat: no-repeat;
+    background-position: 35% center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 100px 0 0;
+    text-align: center;
+    min-height: 360px;
+    position: relative;
+}
+
+/* 奔向编程的星辰大海的样式 */
+.logotxt {
+    margin-bottom: 30px;
+    border: 0;    
+}
+
+.logotxt a{
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+/*h2 第七站台的样式*/
+.header h2 {
+    color: #fff;
+    padding: 0;
+    margin: 0 0 45px;
+    font-weight: 100;
+    font-size: 27px;
+    letter-spacing: 0px;
+}
+/* logo图片的样式*/
+.logoimg{
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  bottom: -34px;
+}
+
+.logoimg img {
+
+  transition: transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+
+}
+
+.logoimg img:hover{
+  transform: rotate(180deg);
+}
+
+.mian {
+  margin-top: 90px;
+}
+/* 老师github仓库的示例css样式
 .main-header {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -11,3 +69,20 @@
   margin-top: 0;
   color: #fff;
 }
+
+.words-pannel {
+  margin-top: 10px;
+}
+
+.avatar {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 10px;
+  float: left;
+  margin-right: 18px;
+  cursor: default;
+}
+*/
