@@ -1,3 +1,28 @@
+/*这是页面顶部的样式*/
+.nav a{
+
+  text-decoration: none;
+  color:#777;
+}
+
+.nav>li>a:hover {
+  color: #333;
+  background-color: transparent;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+.navbar-brand>img {
+    width: 20px;
+    height: 20px;
+}
+
 /* 这是我从bootstrap网站里面直接copy过来的样式*/
 .header {
     background: #222;
@@ -7,8 +32,9 @@
     background-size: cover;
     padding: 100px 0 0;
     text-align: center;
-    min-height: 360px;
+    min-height: 440px;
     position: relative;
+    
 }
 
 /* 奔向编程的星辰大海的样式 */
@@ -33,18 +59,33 @@
     font-size: 27px;
     letter-spacing: 0px;
 }
+
+.logo2 {
+  
+    font-size: 13px;
+    color: #fff;
+    font-weight: 60;
+    letter-spacing: 2px;
+}
+.logo2 img{
+    width: 30px;
+    height: 30px;
+
+}
+
 /* logo图片的样式*/
 .logoimg{
   position: absolute;
-  left: 1%;
-  right: 1%;
-  bottom: -34px;
+  bottom: 89px;
+  left: 47%;
+
 }
 
 .logoimg img {
 
   transition: transform 0.4s ease-out;
   -webkit-transition: -webkit-transform 0.6s ease-out;
+  text-align: center;
 
 }
 
@@ -52,10 +93,6 @@
   transform: rotate(180deg);
 }
 
-.main {
-  margin-top: 90px;
-  background-color: #fff;
-}
 
 .container2{
     width: 48%;
@@ -67,6 +104,7 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #eee;
+    margin-top: 90px;
 }
 
 .container2 h2{
@@ -92,6 +130,28 @@
   margin-right: 18px;
   cursor: default;
 }
+
+/*第一阶段的内容*/
+.first-content {
+
+  max-height: 600px;
+  min-height: 540px;
+  background-color: white;
+}
+
+
+/*留言板的样式*/
+.col-md-4 {
+
+  margin: 90px 5px 5px 5px ;
+
+}
+
+.col-md-3 {
+  margin: 90px 10px 10px 20px;
+}
+
+
 
 
 /* 老师github仓库的示例css样式
