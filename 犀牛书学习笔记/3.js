@@ -1,9 +1,33 @@
-function f() {
-    var x = 2;
-    console.log(x);
-    console.log(arguments[0]);// arguments指代传输的实参对象。
-    arguments[0] = null;
-    console.log(arguments[0]);
-}
+function memorize(f) {
+	var cache = {};
+	return function() {
+		var key = arguments.length + ' | ' + Array.prototype.join.call(arguments,',');
+		if(key in cache) {
+			return cache[key];
+		} else {
+			cache[key] = f.apply(this,arguments);
+			return cache[key];
+			
+		}
+	}
+};
 
-f(1);
+function gcd(a,b) {
+	var t;
+	if(a<b){
+		t=b,b=a,a=t;
+	}
+	while(b !=0) {
+		t=b, b = a%b , a = t;
+	};
+	return a ;
+};
+var gcdmemo = memorize(gcd);
+console.log(gcdmemo(85,187));
+
+var fs = memorize(
+	function(n) {
+		return (n<=1) ? 1:n*fs(n-1);
+	});
+fs(5);
+console.log(fs(5));
