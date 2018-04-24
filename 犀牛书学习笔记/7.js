@@ -1,9 +1,7 @@
-var a= /Java/;
-var text = 'JavaScript is more fun than Java';
+var a= /\w$/;
+var text = '1JavaScript: JavaIis good3';
 
 var result;
 
-result = a.exec(text);
-console.log(result);
-result = a.exec(text);
-console.log(result);
+result = text.search(a);
+console.log(a.source);

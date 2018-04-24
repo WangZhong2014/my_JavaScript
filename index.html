@@ -33,7 +33,7 @@
               <h2 class="site-name text-center">Seventh Star Station<a href="https://js.xinshengdaxue.com/"></a></h2>
               <div class="logo2" href="#">
               <img src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796">
-              <span>早起的鱼出品</span>
+              <span>vehu</span>
               </div>
 
             </div>
@@ -60,66 +60,11 @@
           </div>
         </div>
       </div>
-
-        <!-- 获取课程文档信息 -->
-        <div class="col-md-4 panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">文档信息</h3>
-          </div>
-          <div class="panel-body" v-for="item in catelogList">
-            <div class="media">
-              <div class="media-body">
-                {{ item.title }} {{ item.url }}
-                <!-- 无法获取detail的属性呢 -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 获取课程信息 -->
-        <div class="col-md-3 panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">课程信息</h3>
-          </div>
-          <div class="panel-body">
-            <div class="words-pannel" v-for="fetchCourseData">
-              <div class="media">
-                <div class="media-body">
-                  {{ fetchCourseData.title }} {{ fetchCourseData.teacher }} {{ fetchCourseData.teacherAvatar }} {{ fetchCourseData.startTime }} {{ fetchCourseData.endTime }}
-                  <!-- 无法获取detail的属性呢 -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-</div>
-
-
-
-   <div class='container2'>
-      <h2>编程心愿&目标</h2>
-      <p >记录了超过200个同学的心里话，一起努力</p>
+      
+      <div>
+        <a href="/homework/wangzhongbin.html">homework</a>
+        <a href="/犀牛书学习笔记/第七章.md"></a>
       </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-6" id="app" style="height: 410px">
-       <div class="words-pannel" v-for="item in wordsList" >
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object avatar" v-bind:src="item.avatar" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">
-                    {{ item.name }}
-                  </h4>
-                    {{ item.words }}
-                </div>
-              </div>
-       </div>
-    </div>
-
      
    </div>
 </body>
