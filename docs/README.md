@@ -1,21 +1,16 @@
-﻿# javascript-王仲斌-
-javascript的持续成长之路
+﻿## 缘起
 
+这是用win10系统学习javascript的历程。
 
+虽然很多人建议用mac，不过我还是用的是windows。因为不久前刚换了一个联想的笔记本，台式机也是windows的。
 
-这是一个文科生，用win10系统学习javascript的历程。
+所以就暂时用windows来学习javascript了。
 
-[这里是主页](https://wangzhong2014.github.io/javascript/)
+虽然别人建议，用mac很快，专门为编程而生，我也相信，但再换貌似有些不实际。
 
-虽然学习编程的，大都是用mac，不过我还是用的是windows。不久前买的一个联想的笔记本，台式机也是windows的。
+就暂时先用windows。
 
-所以就用windows来学习javascript了。
-
-虽然别人总是说，mac很快，专门为编程而生，我也相信，但现在就换电脑也不是很实际。
-
-就还是先用windows。
-
-这里面的所有学习记录，纠错记录，也都是在win7系统下做的。
+这里面的所有学习记录，纠错记录，也都是在win系统下做的。
 
 如果你也是windows用户，你也在学习jacascript，这个教程可以帮到你。
 
