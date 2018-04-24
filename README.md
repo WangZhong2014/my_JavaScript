@@ -7,15 +7,13 @@ javascript的持续成长之路
 
 [这里是主页](https://wangzhong2014.github.io/javascript/)
 
-虽然学习编程的，大都是用mac，不过我还是用的是windows，还是win7系统，之所以不用mac，是因为太贵，买不起。
-
-并且不久前就买了一个联想的笔记本，台式机也是windows的。
+虽然学习编程的，大都是用mac，不过我还是用的是windows。不久前买的一个联想的笔记本，台式机也是windows的。
 
 所以就用windows来学习javascript了。
 
-虽然别人总是说，mac很快，专门为编程而生，我也相信，但现在并不是很实际。
+虽然别人总是说，mac很快，专门为编程而生，我也相信，但现在就换电脑也不是很实际。
 
-现在还是先用windows。
+就还是先用windows。
 
 这里面的所有学习记录，纠错记录，也都是在win7系统下做的。
 
