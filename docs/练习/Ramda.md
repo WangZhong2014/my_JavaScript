@@ -836,3 +836,49 @@ var sortArray = (arr) =>{
 };
 
 ```
+
+### 
+```js
+
+function autocomplete(input, dictionary){
+  let result = [];
+  input = input.match(/[a-z]+/gi).join('').toLowerCase();
+  
+  dictionary.forEach( x => {
+    let len = input.length;
+    x.slice(0,len).toLowerCase() === input
+    ? result.push(x)
+    : '';
+  });
+
+  return result.slice(0,5);
+};
+
+function autocomplete(input, dictionary){
+  var r = new RegExp('^' + input.replace(/[^a-z]/gi,''), 'i');
+  return dictionary.filter(function(w){ return r.test(w); }).slice(0, 5);
+}
+
+```
+
+
+**Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.**
+
+The binary number returned should be a string.
+
+
+```js
+function addBinary(a,b) {
+return (a+b).toString(2);
+}
+```
+
+### 
+```js
+function getMiddle(s){
+  let len = s.length;
+  return len % 2 === 1
+  ? s.substr( (len - 1) / 2 , 1)
+  : s.substr( len / 2 - 1, 2)
+}
+```
