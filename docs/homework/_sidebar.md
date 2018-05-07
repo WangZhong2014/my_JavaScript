@@ -1,6 +1,0 @@
-- homework
-  - [cmd常用命令](homework/win7系统cmd常用命令总结)
-  - [第一次预习作业](homework/第一次预习作业)
-  - [第二次预习作业](homework/第二次预习作业)
-  - [第三次预习作业](homework/第三次预习作业)
-  - [第一节的总结](homework/第一节的总结)
