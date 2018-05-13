@@ -1,9 +1,17 @@
-const R = require('../犀牛书学习笔记/node_modules/ramda');
+const R = require('../犀牛书阅读笔记/node_modules/ramda');
 
-function longestConsec(strarr, k) {
-  let arr = R.aperture(k,strarr).map(x=>x.join(''));
-  console.log(arr);
-
+var maxSequence = (arr) => {
+  let list = [];
+  let len = R.range(1,arr.length+1);
+  len.forEach(item => {
+  list = list.concat(R.aperture(item,arr).map(x=>R.sum(x)));
+  });
+  let result = R.apply(Math.max,list);
+  if(result > 0) {
+    return result;
+  } else {
+    return 0
+   };
 };
 
-longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2)
+
