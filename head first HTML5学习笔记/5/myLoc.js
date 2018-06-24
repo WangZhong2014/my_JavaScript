@@ -1,6 +1,12 @@
 window.onload = getMyLocation;
 
 
+var options = {
+    enableHigthAccuracy: true,
+    maximumAge: 6000,
+    timeout:300
+};
+
 var displayerr  = (error) => {
     var errorTypes = {
         0: 'unknow error',
@@ -17,19 +23,16 @@ var displayerr  = (error) => {
     var div = document.getElementById('location');
     div.innerHTML = errMessage;
 
-    options.timeout +=100;
+    options.timeout += 100;
     navigator.geolocation.getCurrentPosition(
         displayLocation,
         displayerr,
         options
-    )
+    );
+
+    div.innerHTML += '.... checking again with timeout = ' + options.timeout
 };
 
-var options = {
-    enableHigthAccuracy: true,
-    maximumAge: 60000,
-    timeout:100
-};
 
 var computeDistance = (s,d) => {
     var slatrads = dtr(s.latitude);
@@ -104,6 +107,8 @@ var displayLocation = (position) => {
 
     if (map == null) {
         showMap(position.coords);
+    } else {
+        scrollMapToPosition(position.coords);
     };
 
 
@@ -142,5 +147,16 @@ function clearWatch() {
         navigator.geolocation.clearWatch(watchId);
         watchId = null;
     };
+};
+
+function scrollMapToPosition(coords) {
+    var latitude = coords.latitude;
+    var longitude = coords.longitude;
+    var latlong = new google.maps.LatLng(latitude,longitude);
+
+
+    map.panTo(latlong);
+
+    addMarker(map,latlong,"Your new location", "Your move to: " + latitude + ", " + longitude);
 };
 

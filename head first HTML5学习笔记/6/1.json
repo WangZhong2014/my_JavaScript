@@ -1,0 +1,13 @@
+[
+    {"name":"FRESNO","time":1526208365752,"sales":4,"longitude":"-119.998749","latitude":"+36.648635"},
+    
+    {"name":"NORTH HOLLYWOOD","time":1526208369413,"sales":1,"longitude":"-118.298662","latitude":"+33.786594"},
+    
+    {"name":"BELLFLOWER","time":1526208814297,"sales":8,"longitude":"-118.129650","latitude":"+33.888014"},
+    
+    {"name":"HARBOR CITY","time":1526208816827,"sales":5,"longitude":"-118.251554","latitude":"+33.791267"},
+
+    {"name":"SAN JOSE","time":1526208835068,"sales":2,"longitude":"-121.705327","latitude":"+37.189396"},
+
+    {"name":"FRESNO","time":1526208840461,"sales":2,"longitude":"-119.673272","latitude":"+36.763149"}
+]
