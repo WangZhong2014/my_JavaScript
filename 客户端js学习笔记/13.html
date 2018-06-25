@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital clock</title>
+    <script>
+    function displayTime() {
+        let el = document.getElementById("clock");
+        let now = new Date();
+        el.innerHTML = now.toLocaleTimeString();
+        setTimeout(displayTime,1000);
+    };
+
+    window.onload = displayTime;
+    </script>
+
+    <style>
+    #clock {
+        font: bold 24pt sans;
+        background: #ddf;
+        padding: 10px;
+        border: solid black 2px;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <span id="clock"></span>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    .reveal * {
+        display: none;
+    }
+    .reveal *.handle {
+        display: block;
+    }
+    </style>
+
+    <script>
+        window.onload = function() {
+            let elements = document.getElementsByClassName('reveal');
+            for(let i = 0; i<elements.length;i++){
+                let elt = elements[i];
+                let title = elt.getElementsByClassName("handle")[0];
+                addRevealHandler(title,elt);
+
+                function addRevealHandler (title,elt) {
+                    title.onclick = function() {
+                        if (elt.className === "reveal") {
+                            elt.className = "revealed"
+                        } else if (elt.className === "revealed") {
+                            elt.className = "reveal";
+                        };
+                    }
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <h1 class="handle"> Click here to reveal hidden text</h1>
+        <p>This paragraph is hidden. it appears when you click on the title</p>
+    </div>
+</body>
+</html> -->
